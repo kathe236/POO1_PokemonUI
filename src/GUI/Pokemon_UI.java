@@ -32,6 +32,9 @@ public class Pokemon_UI {
 
                 );
 
+                JOptionPane.showMessageDialog(null, "Guardado exitosamente el pokemon: "+pokemonId.getText());
+
+
 
             }
         });
