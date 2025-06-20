@@ -18,6 +18,13 @@ public class Pokemon_UI {
     public JCheckBox pokemonLegend;
     public JButton guardarButton;
 
+    private void limpiarCampos() {
+        pokemonId.setText("");
+        pokemonName.setText("");
+        pokemonLevel.setText("");
+        pokemonLegend.setSelected(false);
+    }
+
     public Pokemon_UI() {
         guardarButton.addActionListener(new ActionListener() {
             @Override
@@ -34,6 +41,7 @@ public class Pokemon_UI {
 
                 JOptionPane.showMessageDialog(null, "Guardado exitosamente el pokemon: "+pokemonId.getText());
 
+                limpiarCampos();
 
 
             }
