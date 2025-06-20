@@ -46,6 +46,16 @@ public class Pokemon {
         this.legendary = legendary;
     }
 
+    @Override
+    public String toString() {
+        return "Pokemon{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", level=" + level +
+                ", legendary=" + legendary +
+                '}';
+    }
+
     public static void crearPokemon(int id, String name, int level, boolean legendary)
     {
         Pokemon newPokemon = new Pokemon(
